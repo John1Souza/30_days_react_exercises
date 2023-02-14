@@ -9,24 +9,30 @@ const hexaColor = () => {
     color += str[index]
   }
   return "#" + color
-};
-
-const divStyles = {
-  backgroundColor: `${hexaColor()}`,
-  color: "#fff",
-  margin: "10px",
-  padding: "10px 20px",
 }
+
+const color = (hexaColor(), hexaColor(), hexaColor(), hexaColor(), hexaColor())
+
+const colorSelector = () => {
+  let colorAtt
+  for (let i = 0; i < color.length; i++){
+    colorAtt = color[i]
+  }
+  return colorAtt
+}
+const 
 
 const HexaColor = () => {
   return (
-  <div>{hexaColor()}</div>
+  <div>
+    <div className='hexa_color' style={{backgroundColor: `${colorAtt}`}}>{colorAtt}</div>
+  </div>
   )
 }
 
 const App = () => (
-  <div>
-    <div style={divStyles}><HexaColor/></div>
+  <div >
+    <HexaColor/>
   </div>
 );
 
