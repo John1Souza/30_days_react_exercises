@@ -11,22 +11,17 @@ const hexaColor = () => {
   return "#" + color
 }
 
-const color = (hexaColor(), hexaColor(), hexaColor(), hexaColor(), hexaColor())
-
-const colorSelector = () => {
-  let colorAtt
-  for (let i = 0; i < color.length; i++){
-    colorAtt = color[i]
-  }
-  return colorAtt
-}
-const 
 
 const HexaColor = () => {
+  const divs = []
+  for (let i = 0; i< 5; i++){
+    let color = hexaColor()
+    divs.push(<div className="hexa_color" style={{ backgroundColor: `${color}` }}>{color}</div>)
+  }
   return (
-  <div>
-    <div className='hexa_color' style={{backgroundColor: `${colorAtt}`}}>{colorAtt}</div>
-  </div>
+  <>
+    {divs}
+  </>
   )
 }
 
