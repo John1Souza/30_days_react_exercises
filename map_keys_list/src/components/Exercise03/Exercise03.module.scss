@@ -1,0 +1,30 @@
+.population_container {
+    font-family: 'Roboto Mono', sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: 3.5rem;        
+    }
+    
+    h2, small {
+        font-size: 2rem;
+    }
+}
+
+.countries_container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    
+    
+    h2 {
+        margin: 1rem 0;
+    }
+
+    td {
+        text-align: left;
+    }
+}

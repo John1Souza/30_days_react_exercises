@@ -1,0 +1,41 @@
+.container {
+    font-family: 'Roboto Mono', sans-serif;
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+
+.table_container {
+    
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    tr{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        place-items: center;
+        gap: 1px;
+        font-size: 2.5rem;
+    }
+    td {
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;   
+        font-size: 400;
+        text-align: center;    
+        color: white;
+    }
+    .primeNumber {
+        background-color: red;
+    }
+    .evenNumber {
+        background-color: green;
+    }
+    .oddNumber {
+        background-color: yellow;
+    }
+
+    
+}
+
