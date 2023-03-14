@@ -1,0 +1,24 @@
+.app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+
+.header_wrapper {
+    color: white;
+
+    h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    h2, h3, p, small {
+        padding: .25rem 0;
+    }
+}
